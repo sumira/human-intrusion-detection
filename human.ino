@@ -139,7 +139,7 @@ String analyzeImage(camera_fb_t* fb) {
   JsonArray parts = content.createNestedArray("parts");
 
   JsonObject textPart = parts.createNestedObject();
-  textPart["text"] = "Does this image contain an elephant? Please answer with 'Yes' or 'No'.";
+  textPart["text"] = "Does this image contain human or humans? Please answer with 'Yes' or 'No'.";
 
   JsonObject imagePart = parts.createNestedObject();
   JsonObject inlineData = imagePart.createNestedObject("inline_data");
