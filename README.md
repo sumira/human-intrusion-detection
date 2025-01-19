@@ -1,5 +1,5 @@
 
-# ESP32-CAM Elephant Detection
+# ESP32-CAM Human Detection
 
 This project utilizes an ESP32-CAM module to capture images and analyze them for the presence of elephants. The image is sent to Gemini API for analysis, and based on the response, an action is triggered.
 
