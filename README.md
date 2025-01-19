@@ -6,13 +6,13 @@ This project utilizes an ESP32-CAM module to capture images and analyze them for
 ## Features
 - Captures an image using the ESP32-CAM module.
 - Sends the captured image to Gemini API for analysis.
-- Receives a response from the API, which answers whether the image contains an human.
+- Receives a response from the API, which answers whether the image contains a human.
 - Controls a GPIO pin (for example, turning on a relay or other connected device) based on the API's response.
 
 ## Components
 - **ESP32-CAM**: Camera module used for image capture.
 - **WiFi**: Connects the ESP32-CAM to the internet for API communication.
-- **Gemini API**: Used for processing the image and detecting if an human is present.
+- **Gemini API**: Used for processing the image and detecting if a human is present.
 - **GPIO**: The output (like an LED or relay) is controlled based on the analysis result.
 
 ## Requirements
@@ -51,10 +51,10 @@ The code includes ESP32-CAM specific camera pin configurations and initializatio
 ### Image Capture and Analysis
 1. The `loop()` function captures an image from the ESP32-CAM every 5 seconds (controlled by the interval).
 2. The image is encoded into Base64 and sent to the Gemini API for analysis.
-3. The API response is checked to determine whether the image contains an elephant. If yes, a GPIO pin (connected to an RF device) is triggered.
+3. The API response is checked to determine whether the image contains a human. If yes, a GPIO pin (connected to an RF device) is triggered.
 
 ### Handling Responses
-- If the response contains "Yes", the system assumes an elephant is detected and performs an action (like turning on a relay or LED).
+- If the response contains "Yes", the system assumes a human is detected and performs an action (like turning on a relay or LED).
 - If "No", the system does nothing or performs an alternate action.
 
 ### Error Handling
