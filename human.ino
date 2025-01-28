@@ -41,7 +41,7 @@ void setup() {
   WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0);
 
   Serial.begin(115200);
-  Serial.println("\nESP32-CAM Elephant Detection");
+  Serial.println("\nESP32-CAM Human Detection");
 
   camera_config_t config;
   config.ledc_channel = LEDC_CHANNEL_0;
