@@ -200,10 +200,10 @@ void loop() {
     String response = analyzeImage(fb);
 
     if (response.indexOf("Yes") != -1) {
-      Serial.println("Elephant Detected");
+      Serial.println("Human Detected");
       digitalWrite(rf, HIGH);
     } else {
-      Serial.println("No Elephant Detected");
+      Serial.println("No Human Detected");
       digitalWrite(rf, LOW);
     }
 
